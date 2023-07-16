@@ -1,6 +1,6 @@
 import streamlit as st
 def calculate_emi(p,n,r):
-	emi = p*(r/100)*((1+r/100)**n)/(((1+r/100)**n)-1)
+	emi = (p*(r/100)*((1+r/100)**n))/(((1+r/100)**n)-1)
 	st.write("EMI calculated = ₹",emi)
 st.title("EMI calculator.")
 p=st.slider("Enter principal amount:",1,10000)
